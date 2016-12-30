@@ -5,7 +5,7 @@ data$DateTime<-as.POSIXct(paste(data$Date,data$Time), format="%d/%m/%Y %H:%M:%S"
 #plot4
 par(mfrow=c(2,2), mar=c(4,5,2,1), oma=c(0,0,2,0))
 with(data, {
-  plot(Global_active_power~DateTime, type="l", ylab="Global Active Power (kilowatts)", xlab="")
+  plot(Global_active_power~DateTime, type="l", ylab="Global Active Power", xlab="")
   plot(Voltage~DateTime, type="l", ylab="Voltage", xlab="")
   plot(Sub_metering_1~DateTime, col='Black',type="l", ylab="Energy Sub Metering", xlab="")
   lines(Sub_metering_2~DateTime,col='Red')
